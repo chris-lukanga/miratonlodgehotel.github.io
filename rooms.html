@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rooms — Miraton Lodge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="page-rooms">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Miraton Lodge logo" class="logo" />
+        <div class="brand-text">
+          <div class="title">MIRATON LODGE</div>
+          <div class="motto">OUR HOME IS YOUR HOME</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rooms.html" class="nav-link active">Rooms</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button id="headerTalk" class="btn-ghost">Talk to us</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="rooms-hero">
+      <h1>Rooms & Rates</h1>
+      <p>Choose by floor (A–F) and room number (1–7). Family rooms are the 7th room on each floor (night bookings only).</p>
+    </section>
+
+    <section class="controls">
+      <div class="control-row">
+        <select id="floorSelect">
+          <option value="All">All Floors</option>
+        </select>
+        <input id="searchInput" type="text" placeholder="Search room (e.g. D4)" />
+        <button class="btn-outline" onclick="openDirections()">Get Directions</button>
+      </div>
+    </section>
+
+    <section id="roomsGrid" class="rooms-grid"><!-- JS fills --></section>
+  </main>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="closeModal" class="modal-close" aria-label="Close modal">✕</button>
+      <div id="modalBody"><!-- JS fills --></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>Miraton Lodge — OUR HOME IS YOUR HOME</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Address:</strong> 19 Natal Street, Johannesburg</p>
+        <div class="footer-social">
+          <a href="#" onclick="openSocial('https://facebook.com')">Facebook</a> ·
+          <a href="#" onclick="openSocial('https://instagram.com')">Instagram</a> ·
+          <a href="#" onclick="openWhatsApp('Hello Miraton Lodge 👋 I would like to follow you on WhatsApp')">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

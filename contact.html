@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Miraton Lodge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="page-contact">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Miraton Lodge logo" class="logo" />
+        <div class="brand-text">
+          <div class="title">MIRATON LODGE</div>
+          <div class="motto">OUR HOME IS YOUR HOME</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <button id="headerTalk" class="btn-ghost">Talk to us</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact-hero">
+      <h1>Contact & Reservations</h1>
+      <p>Prefer a quick chat? Message us on WhatsApp and we'll respond promptly.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>WhatsApp</h3>
+          <p>Quick enquiries and reservations</p>
+          <button id="contactWhatsApp" class="btn-primary">Message on WhatsApp</button>
+        </div>
+
+        <div class="contact-card">
+          <h3>Visit Us</h3>
+          <p><strong>Address:</strong> 19 Natal Street<br>Johannesburg</p>
+          <button class="btn-outline" onclick="openDirections()">Get Directions</button>
+        </div>
+
+        <div class="contact-card">
+          <h3>Follow Us</h3>
+          <p>Stay connected for offers and latest updates.</p>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button onclick="openSocial('https://facebook.com')" class="btn-outline">Facebook</button>
+            <button onclick="openSocial('https://instagram.com')" class="btn-outline">Instagram</button>
+            <button onclick="openWhatsApp('Hello Miraton Lodge 👋 I would like to follow you on WhatsApp')" class="btn-outline">WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>Miraton Lodge — OUR HOME IS YOUR HOME</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
